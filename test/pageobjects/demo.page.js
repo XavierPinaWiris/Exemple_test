@@ -1,5 +1,4 @@
-const { $ } = require('@wdio/globals')
-const Page = require('./page');
+import Page from './page.js';
 
 class MTDemoPage extends Page {
     open () {
@@ -7,4 +6,4 @@ class MTDemoPage extends Page {
     }
 }
 
-module.exports = new MTDemoPage();
+export default new MTDemoPage();

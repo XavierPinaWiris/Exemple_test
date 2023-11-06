@@ -1,5 +1,4 @@
-const { expect } = require('@wdio/globals')
-const demoPage = require('../pageobjects/demo.page')
+import demoPage from '../pageobjects/demo.page.js';
 
 describe('My Login application', () => {
     it('should login with valid credentials', async () => {
