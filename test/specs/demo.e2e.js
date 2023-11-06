@@ -1,10 +1,9 @@
 const { expect } = require('@wdio/globals')
-const Page = require('../pageobjects/page')
+const demoPage = require('../pageobjects/demo.page')
 
-const page = new Page();
 describe('My Login application', () => {
     it('should login with valid credentials', async () => {
-        await page.open()
+        await demoPage.open()
         await browser.debug()
     })
 })
