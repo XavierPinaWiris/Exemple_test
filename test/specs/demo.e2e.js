@@ -1,9 +1,14 @@
 import demoPage from '../pageobjects/demo.page.js';
 
-describe('My Login application', () => {
-    it('should login with valid credentials', async () => {
+describe('Demo test', () => {
+    it('The cookie button is clicked correctly', async () => {
         await demoPage.open()
-        await browser.debug()
+        await demoPage.cookiebtn.click()
+
+    })
+    it('The Arabic Notation button is clicked correctly', async () => {
+        console.log(demoPage.cookiebtn)
+        await demoPage.arabicbtn.click()
     })
 })
 
