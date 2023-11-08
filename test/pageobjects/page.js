@@ -10,15 +10,19 @@ export default class Page {
     open (path) {
         return browser.url(path)
     }
+
     get forDevelopersButton () {
         return $('#new_tab_container > div > a:nth-child(4)')
     }
+
     get arabicNotationButton () {
         return $('#new_tab_container > div > a:nth-child(3)')
     }
+
     get chemTypeButton () {
         return $('#new_tab_container > div > a:nth-child(2)')
     }
+    
     get mathTypeButton () {
         return $('#new_tab_container > div > a:nth-child(1)')
     }
