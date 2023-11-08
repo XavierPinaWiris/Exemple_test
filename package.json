@@ -5,7 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run wdio",
+    "test": "npx del-cli allure-results && npm run wdio",
+    "generate-report": "npx allure generate",
+    "open-report": "allure open",
     "wdio": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
@@ -21,7 +23,6 @@
   },
   "dependencies": {
     "@wdio/allure-reporter": "^8.21.0",
-    "chromedriver": "^119.0.0",
-    "wdio-chromedriver-service": "^8.1.1"
+    "del-cli": "^5.1.0"
   }
 }

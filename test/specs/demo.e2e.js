@@ -1,15 +1,10 @@
 import demoPage from '../pageobjects/demo.page.js';
 
-var allure = require('allure-commandline');
-var generation = allure(['generate', 'allure-results']);
-
-describe('My Login application', () => {
-    it('should login with valid credentials', async () => {
-        await demoPage.open()
-        await browser.debug()
+describe('Demo test', () => {
+    it('The Arabic Notation button is clicked correctly', async () => {
+        await demoPage.open();
+        await demoPage.acceptCookies();
+        await demoPage.arabicNotationButton.click()
     })
-    generation.on('exit', function(exitCode) {
-        console.log('Generation is finished with code:', exitCode);
-    });
 })
 
