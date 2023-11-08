@@ -23,7 +23,7 @@ export default class Page {
         return $('#new_tab_container > div > a:nth-child(2)')
     }
     
-    get mathTypeButton () {
+    get indexButton () {
         return $('#new_tab_container > div > a:nth-child(1)')
     }
 
