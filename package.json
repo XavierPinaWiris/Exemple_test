@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx del-cli allure-results && npm run wdio",
-    "generate-report": "npx allure generate",
+    "generate-report": "npx allure generate --clean",
     "open-report": "allure open",
     "wdio": "wdio run ./wdio.conf.js"
   },
