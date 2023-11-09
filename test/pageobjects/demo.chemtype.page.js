@@ -1,6 +1,6 @@
 import Page from './page.js';
 
-class MTDemoChamTypePage extends Page {
+class MTDemoChemTypePage extends Page {
 
     get chemTypeToolbar () {
         return $('#editorContainerChem > div')
@@ -11,4 +11,4 @@ class MTDemoChamTypePage extends Page {
     }
 }
 
-export default new MTDemoChamTypePage();
+export default new MTDemoChemTypePage();
